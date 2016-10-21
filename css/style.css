@@ -37,24 +37,21 @@
 	font-weight: normal;
 	font-style: italic;
 }
-.main-nav{
+/* .main-nav{
 	display: inline-block;
 	width: 100%;
 	float: left;
-}
-.nav-div{
+} */
+/* .nav-div{
 	width: 78%;
 	float: left;
-}
+} */
 .logo{
-	float: left;
-	width: 19%;
-	text-align: center;
+	height: auto;
+	width: 99px !important;
 	margin-top: 10px;
 }
-.logo img{
-	width: 99px;
-}
+
 .scroll{
 	cursor: pointer;
 }
@@ -68,18 +65,19 @@
 	height: 75px;
 }
 .navul{
-	text-align: center;
+	
 }
-.navli{
 
-	margin-left: 60px;
+.navli{
+	/* padding: 15px; */
+	padding-left: 60px;
 	letter-spacing: 2px;
 	padding-top: 4%;
 	cursor: pointer;
 }
-.navactive{
+/* .navactive{
 	outline: 1px;
-}
+} */
 .about{
 	cursor: pointer;
 }
@@ -710,48 +708,48 @@ animation: none;
 @keyframes come-in {
 to { transform: translateY(0); }
 }
-
+.navbar-toggle{
+	margin-top: 6%;
+	border:none;
+}
+.navbar-toggle:active{
+	background: none !important;
+}
+.navbar-toggle:focus{
+	background: none !important;
+}
 @media only screen and (max-width: 768px) {
-	.nav-div{
-		height: 100%;
-		width: 150px;
-	    margin-left: -50%;
-	    line-height: 10px;
-	    background-color: yellow;
-	    position: fixed;
-	    
-	}
-	.navli{
-		padding: 13px;
-		line-height: 10px;
-		margin: 0;
-	}
-	/* .port-main-slider, */ .staffcon, .clients{
+	 .staffcon, .clients{
 		display: none;
 	}
-	/* .port-mobil-slider-mine, */ .staff-slider-padding, .clients-slider-mine{
+	 .staff-slider-padding, .clients-slider-mine{
 		display: block;
 
 	}
 	.portfolio-header, .staff-header, .mainclients div div:first-child, .contactheader, .mainservices div div:first-child span{
 		font-size: 30px;
 	}
-	.staff-header, .mainclients{
+	.mainheader, .mainservices, .mainportfolio,.mainstaff, .mainclients, .maincontact{
+		margin-top: 20%;
+	}
+	.staff-header {
 		padding-bottom: 15px;
 	}
 	.mainheader div:last-child ul li{
-		margin-left: 0px;
+		padding-left: 0px;
 	}
-	.logo{
+	.navul{
+		text-align: center;
 		width: 100%;
+		box-shadow: 0.5px 0.5px 1px;
+	}
+	.navli{
+
+		margin: 0;
+		width: 100%;
+		padding-top: 8px;
+		padding-bottom: 8px;
 	}
 }
 
-.collapse-nav{
-	transform:translateX(650px);
-	height: 100%;
-	width: 150px;
- 	background-color: yellow;
-	position: fixed;
-	 z-index: 99999;
-}
+
