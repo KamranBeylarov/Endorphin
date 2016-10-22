@@ -65,12 +65,12 @@
 	height: 75px;
 }
 .navul{
-	
+	width: 100%;
 }
 
 .navli{
 	/* padding: 15px; */
-	padding-left: 60px;
+	margin-left: 60px;
 	letter-spacing: 2px;
 	padding-top: 4%;
 	cursor: pointer;
@@ -235,25 +235,35 @@
 	padding-right: 18%;
     padding-left: 18%;
 }
+
 .portimg {
+	height: 208px;
 	float: left;
 	width: 33.3%;
 	padding: 0;
 	position: relative;
+	transition: 0.5s linear;
+	overflow: hidden;
+
 }
-.portimg img{
+.portimg a{
+	color:#9f9fa0; 
+}
+.portimg  a img{
 	width: 100%;
-	height: 200px;
-	position: relative
+	height: 100%;
+	position: relative;
+	transition: 0.5s linear;
+	overflow: hidden;
 }
 .port-absolute{
-	text-align: center;
+	/* text-align: center; */
 	z-index: 999;
 	top: 0;
 	left: 0;
 	position: absolute;
 	width: 100%;
-	height: 200px;
+	 height: 208px;
 	background-color:transparent;
 }
 .port-absolute:hover{
@@ -262,6 +272,9 @@
 	transition: 0.5s ;
 }
 .port-absolute span{
+	position: absolute;
+	left: 3%;
+	top: 10px;
 	font-family: "Endorphin BN";
 	font-size: 25px;
 }
@@ -542,15 +555,15 @@
 }
 .clients-button{
 	font-family: "Endorphin BI";
-	color: #5cb85c;
+	color: #fedb37;
 	padding: 10px 7%;
-	border-color: #5cb85c;
+	border-color: #fedb37;
 	background:transparent;
-	border: 2px solid #5cb85c;
+	border: 2px solid #fedb37;
 }
 .clients-button:hover{
 	transition: 0.5s;
-	background: #5cb85c;
+	background: #fedb37;
 	color: white;
 }
 .clients-button:focus{
@@ -718,7 +731,7 @@ to { transform: translateY(0); }
 .navbar-toggle:focus{
 	background: none !important;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 	 .staffcon, .clients{
 		display: none;
 	}
@@ -751,5 +764,4 @@ to { transform: translateY(0); }
 		padding-bottom: 8px;
 	}
 }
-
 
