@@ -37,25 +37,18 @@
 	font-weight: normal;
 	font-style: italic;
 }
-/* .main-nav{
-	display: inline-block;
-	width: 100%;
-	float: left;
-} */
-/* .nav-div{
-	width: 78%;
-	float: left;
-} */
+.border{
+	border-bottom: 3px solid yellow!important;
+}
 .logo{
+	/* margin-left:30%; */
 	height: auto;
 	width: 99px !important;
 	margin-top: 10px;
 }
-
 .scroll{
 	cursor: pointer;
 }
-
 .navmenuen{
 	transition: 0.4s linear;
 	font-family: "Endorphin BN";
@@ -74,10 +67,8 @@
 	letter-spacing: 2px;
 	padding-top: 4%;
 	cursor: pointer;
+	padding-bottom: 8px;
 }
-/* .navactive{
-	outline: 1px;
-} */
 .about{
 	cursor: pointer;
 }
@@ -253,7 +244,7 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
-	transition: 0.5s linear;
+	transition: 0.25s linear;
 	overflow: hidden;
 }
 .port-absolute{
@@ -535,11 +526,11 @@
 	text-align: center;
 	font-family: "Endorphin BN";
 }
-.clients ul{
+.clients-list ul{
 	list-style-type: none;
 	text-align: center;
 }
-.clients ul li{
+.clients-list ul li{
 
 	height: 130px;
 	width: 18%;
@@ -548,7 +539,7 @@
 	padding-left:3%;
 	padding-right:3%;
 }
-.clients ul li img{
+.clients-list ul li img{
 	width: 100%;
 	height: auto;
 
@@ -732,7 +723,7 @@ to { transform: translateY(0); }
 	background: none !important;
 }
 @media only screen and (max-width: 800px) {
-	 .staffcon, .clients{
+	 .staffcon, .clients-list{
 		display: none;
 	}
 	 .staff-slider-padding, .clients-slider-mine{
@@ -741,6 +732,9 @@ to { transform: translateY(0); }
 	}
 	.portfolio-header, .staff-header, .mainclients div div:first-child, .contactheader, .mainservices div div:first-child span{
 		font-size: 30px;
+	}
+	.mainservices div div:nth-child(2) div:nth-child(2), .mainservices div div:nth-child(3) div:nth-child(2), .mainservices div div:nth-child(4) div:nth-child(2){
+		font-size:25px;
 	}
 	.mainheader, .mainservices, .mainportfolio,.mainstaff, .mainclients, .maincontact{
 		margin-top: 20%;

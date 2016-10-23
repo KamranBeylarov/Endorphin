@@ -55,37 +55,40 @@ jQuery(document).ready(function($) {
 		}
 		});
 		});
-
 // portfolio scale
 var image=$(".portimg img");
   $('.portimg').hover(function() {
-      $(this).children('a').children('img').css('transform','scale(1.2)');
+      $(this).children('a').children('img').css('transform','scale(1.1)');
     }, function() {
       $(this).children('a').children('img').css('transform','scale(1)');
     });
    
+   // 
   
- 
-   
- 
-
+   if ( $(window).innerWidth()<768) {
+    $(".logo").removeClass('pull-right');
+   };
 		// logo src 
-		for (var i = 0; i < $('.comSec').length; i++) {
-				$('.comSec').eq(i).attr('data-offset', $('.comSec').eq(i).offset().top);
-			};
+		// for (var i = 0; i < $('.comSec').length; i++) {
+		// 		$('.comSec').eq(i).attr('data-offset', $('.comSec').eq(i).offset().top);
+		// 	};
 			$(window).scroll(function(event) {
 			var scrollTop=$(window).scrollTop();
 			for (var i = 0; i < $('.comSec').length; i++) {	
 			var elementHeight=$('.comSec').eq(i).height();
 			var offSet=$('.comSec').eq(i).offset().top;
 				if(scrollTop>=$('.comSec').eq(i).offset().top && scrollTop<(offSet+elementHeight-1)){
-          // console.log($('.comSec').eq(i).attr('id'));;
+            // console.log($("."+$('.comSec').eq(i).attr('id')).removeClass('border'));
+            if ($(window).innerWidth()>768) {
+                $(".navli").removeClass('border');
+            $("."+$('.comSec').eq(i).attr('id')).addClass('border');
+            };       
 					if($('.comSec').eq(i).attr('data-color')==0){
 						$('.logo ').attr('src', '../images/logo1.png');
 						$(".navmenuen").css('background', '#fff');
+             // $(".border").css('border-color','#fff');
             if ($(window).innerWidth()<768) {
                $(".navul").css('background', '#fff')
-           
             }else{
               $(".navul").css('background', 'none');
             };    
@@ -93,6 +96,7 @@ var image=$(".portimg img");
 					else{
 						$('.logo ').attr('src', '../images/logo.png');
 						$(".navmenuen").css('background', '#fedb37');
+             // $(".border").css('border-color','#fedb37');
              if ($(window).innerWidth()<768) {
                $(".navul").css('background', '#fedb37');
             }else{
