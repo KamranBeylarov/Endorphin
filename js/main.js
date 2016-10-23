@@ -86,7 +86,7 @@ var image=$(".portimg img");
 					if($('.comSec').eq(i).attr('data-color')==0){
 						$('.logo ').attr('src', '../images/logo1.png');
 						$(".navmenuen").css('background', '#fff');
-             // $(".border").css('border-color','#fff');
+              $(".border").css('border-color','#fedb37');
             if ($(window).innerWidth()<768) {
                $(".navul").css('background', '#fff')
             }else{
@@ -96,7 +96,7 @@ var image=$(".portimg img");
 					else{
 						$('.logo ').attr('src', '../images/logo.png');
 						$(".navmenuen").css('background', '#fedb37');
-             // $(".border").css('border-color','#fedb37');
+              $(".border").css('border-color','#fff');
              if ($(window).innerWidth()<768) {
                $(".navul").css('background', '#fedb37');
             }else{

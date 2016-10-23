@@ -38,7 +38,7 @@
 	font-style: italic;
 }
 .border{
-	border-bottom: 3px solid yellow!important;
+	border-bottom: 3px solid;
 }
 .logo{
 	/* margin-left:30%; */
