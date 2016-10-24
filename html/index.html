@@ -8,8 +8,11 @@
 		<link rel="stylesheet" type="text/css" href="../fancy/jquery.fancybox.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
+	
 	<body>
-		
+	<div id="preloader">
+  <div id="status"></div>
+</div>
 		<nav class = "navbar navbar-default container-fluid navmenuen navbar-fixed-top" role = "navigation">
 			<div class="container">
 				<div class = "navbar-header col-md-2">
@@ -23,14 +26,14 @@
 					<img src="../images/LOGO1.png" class="scroll logo pull-right" data-section='header' >
 				</div>
 				
-				<div class = "collapse navbar-collapse col-md-10"  id = "example-navbar-collapse">
+				<div class = "collapse navbar-collapse uldiv"  id = "example-navbar-collapse">
 					<ul class = "nav navbar-nav navul">
-						<li class="navli scroll header " data-section='header' >ABOUT</li>
-						<li class="navli scroll services "   data-section='services' >SERVICES</li>
-						<li class="navli scroll portfolio"  data-section='portfolio' >PORTFOLIO</li>
-						<li class="navli scroll staff"  data-section='staff' >STAFF</li>
-						<li class="navli scroll clients"  data-section='clients' >CLIENTS</li>
-						<li class="navli scroll contact"  data-section='contact' >CONTACT</li>			
+						<li class="navli scroll" data-section='header' ><span class="s header">ABOUT</span></li>
+						<li class="navli scroll" data-section='services' ><span class="s services">SERVICES</span></li>
+						<li class="navli scroll" data-section='portfolio' ><span class="s portfolio">PORTFOLIO</span></li>
+						<li class="navli scroll" data-section='staff' ><span class="s staff">STAFF</span></li>
+						<li class="navli scroll" data-section='clients' ><span class="s clients">CLIENTS</span></li>
+						<li class="navli scroll" data-section='contact' ><span class="s contact">CONTACT</span></li>			
 					</ul>
 				</div>
 			</div>
@@ -471,7 +474,11 @@
 							<li class="module"><img src="../images/clients 1.png"></li>
 							<li class="module"><img src="../images/clients 1.png"></li>
 						</ul>
-						<button type="button" class="clients-button btn center-block">See More</button>
+						<div class="clearfix">						
+						</div>
+						<div style="width: 100%;">
+							<button type="button" class="clients-button btn center-block">See More</button>
+						</div>
 					</div>
 					<div>
 					</div>

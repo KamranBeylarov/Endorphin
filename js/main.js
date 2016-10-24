@@ -1,6 +1,10 @@
 jQuery(document).ready(function($) {
-   
-    
+   // preloader
+ $(window).on('load', function() { 
+  $('#status').fadeOut(5000);
+  $('#preloader').delay(1500).fadeOut("slow");
+  $('body').delay(1500).css({'overflow':'visible'});
+})
 
 	// staff togle
 	$(".clicktogle1").click(function(){
@@ -19,10 +23,6 @@ jQuery(document).ready(function($) {
 		var offset=$('#'+section+'').offset().top;
 		$("html, body").animate({ scrollTop:offset+1 }, 1000);
 	});
-
-// fancybox
-      // $(".fancybox").fancybox();
-  
 	//  body animation
 	 $.fn.visible = function(partial) {
     
@@ -68,6 +68,9 @@ var image=$(".portimg img");
    if ( $(window).innerWidth()<768) {
     $(".logo").removeClass('pull-right');
    };
+     $(window).on('resize',function(){
+      $(".logo").removeClass('pull-right');
+    });
 		// logo src 
 		// for (var i = 0; i < $('.comSec').length; i++) {
 		// 		$('.comSec').eq(i).attr('data-offset', $('.comSec').eq(i).offset().top);
@@ -80,8 +83,8 @@ var image=$(".portimg img");
 				if(scrollTop>=$('.comSec').eq(i).offset().top && scrollTop<(offSet+elementHeight-1)){
             // console.log($("."+$('.comSec').eq(i).attr('id')).removeClass('border'));
             if ($(window).innerWidth()>768) {
-                $(".navli").removeClass('border');
-            $("."+$('.comSec').eq(i).attr('id')).addClass('border');
+                $(".s").removeClass('border');
+             $("."+$('.comSec').eq(i).attr('id')).addClass('border');
             };       
 					if($('.comSec').eq(i).attr('data-color')==0){
 						$('.logo ').attr('src', '../images/logo1.png');

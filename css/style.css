@@ -37,11 +37,36 @@
 	font-weight: normal;
 	font-style: italic;
 }
+
+body {
+  overflow: hidden;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999999;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+   top: 50%;
+  background-image: url("../images/preloader 2.gif");
+   background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+
 .border{
+	padding-bottom: 5px;
 	border-bottom: 3px solid;
 }
 .logo{
-	/* margin-left:30%; */
 	height: auto;
 	width: 99px !important;
 	margin-top: 10px;
@@ -52,18 +77,25 @@
 .navmenuen{
 	transition: 0.4s linear;
 	font-family: "Endorphin BN";
-	background: transparent;
-	/* opacity: 0.5; */
+	background: #fff;
 	border: none;
 	height: 75px;
 }
 .navul{
+	text-align: center;
 	width: 100%;
+}
+.uldiv{
+	width: 79%;
+	float: left;
 }
 
 .navli{
+	float: left;
+	width:16.66666667%;
+	/* margin-left: 15px; */
 	/* padding: 15px; */
-	margin-left: 60px;
+	/* margin-left: 60px; */
 	letter-spacing: 2px;
 	padding-top: 4%;
 	cursor: pointer;
@@ -746,9 +778,10 @@ to { transform: translateY(0); }
 		padding-left: 0px;
 	}
 	.navul{
+		box-shadow: 0.75px 0px 0.75px 0.5px;
 		text-align: center;
 		width: 100%;
-		box-shadow: 0.5px 0.5px 1px;
+		
 	}
 	.navli{
 
@@ -757,5 +790,15 @@ to { transform: translateY(0); }
 		padding-top: 8px;
 		padding-bottom: 8px;
 	}
+	.uldiv{
+		width: 100%;
+		
+	}
+	.navbar-nav {
+    margin: 0;
+}
+.navmenuen{
+	background-color: #fff;
+}
 }
 
