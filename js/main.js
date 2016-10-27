@@ -23,7 +23,11 @@ jQuery(document).ready(function($) {
 		var offset=$('#'+section+'').offset().top;
 		$("html, body").animate({ scrollTop:offset+1 }, 1000);
 	});
+
+
 	//  body animation
+
+
 	 $.fn.visible = function(partial) {
     
       var $t            = $(this),
@@ -55,7 +59,11 @@ jQuery(document).ready(function($) {
 		}
 		});
 		});
+
+
 // portfolio scale
+
+
 var image=$(".portimg img");
   $('.portimg').hover(function() {
       $(this).children('a').children('img').css('transform','scale(1.1)');
@@ -63,15 +71,23 @@ var image=$(".portimg img");
       $(this).children('a').children('img').css('transform','scale(1)');
     });
    
-   // 
+   // responsive code
   
    if ( $(window).innerWidth()<768) {
     $(".logo").removeClass('pull-right');
+    $(".navbar").children('div').removeClass('container');
    };
      $(window).on('resize',function(){
       $(".logo").removeClass('pull-right');
+       $(".navbar").children('div').removeClass('container');
     });
+
+
+
 		// logo src 
+
+
+
 		// for (var i = 0; i < $('.comSec').length; i++) {
 		// 		$('.comSec').eq(i).attr('data-offset', $('.comSec').eq(i).offset().top);
 		// 	};
@@ -110,7 +126,13 @@ var image=$(".portimg img");
 				}
 			};
 			});
+
+
+
 			// social icons
+
+
+
 			$(".facebook").hover(fbin,fbout) ;
 			function fbin(){
 				
