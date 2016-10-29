@@ -869,3 +869,20 @@ to { transform: translateY(0); }
 		font-size: 30px;
 	}
 }
+@media only screen and (min-width:769px) and (max-width:800px){
+.navbar-collapse.collapse {
+    display: none !important;
+
+}
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+.navbar-header .collapse {
+    display:block !important;
+}
+.navbar-toggle {
+	display:block !important;
+	   margin-top: 14% !important;
+    left: 364%;
+	}
+}
