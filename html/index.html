@@ -3,12 +3,15 @@
 	<head>
 		<title>Endorphin</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="jQuery Responsive Carousel - Owl Carusel">
+		<meta name="author" content="Bartosz Wojciechowski">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="../fancy/jquery.fancybox.css">
+		<link href="../css/owl.carousel.css" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
-	
 	<body>
 		<div id="preloader">
 			<div id="status"></div>
@@ -25,7 +28,6 @@
 					</button>
 					<img src="../images/LOGO1.png" class="scroll logo pull-right" data-section='header' >
 				</div>
-				
 				<div class = "collapse navbar-collapse uldiv"  id = "example-navbar-collapse">
 					<ul class = "nav navbar-nav navul">
 						<li class="navli scroll" data-section='header' ><span class="s header">ABOUT</span></li>
@@ -49,10 +51,11 @@
 					</div>
 					<div class="headericon">
 						<ul>
-							<li class="module"><a href="https://www.facebook.com/EndorphinBaku/?ref=br_rs"><img src="../images/FACEBOOK.png" class="facebook"></a></li>
-							<li class="module"><a href="https://www.instagram.com/endorphinbaku/"><img src="../images/INSTAGRAM.png" class="instagram"></a></li>
-							<li class="module"><a href="https://twitter.com/endorphinbaku"><img src="../images/TWITTER.png" class="twitter"></a></li>
-							<li class="module"><a href="https://www.youtube.com/channel/UCXLyfuvpSN4BM4EY7ZmyvHQ"><img src="../images/YOUTUBE.png" class="youtube"></a></li>
+							<li class="module"><a href="https://www.facebook.com/EndorphinBaku/?ref=br_rs" target="_blank"><img src="../images/FACEBOOK.png" class="facebook"></a></li>
+							<li class="module"><a href="https://www.instagram.com/endorphinbaku/" target="_blank"><img src="../images/INSTAGRAM.png" class="instagram"></a></li>
+							<li class="module"><a href="https://twitter.com/endorphinbaku" target="_blank"><img src="../images/TWITTER.png" class="twitter"></a></li>
+							<li class="module"><a href="https://www.youtube.com/channel/UCXLyfuvpSN4BM4EY7ZmyvHQ"><img src="../images/YOUTUBE.png" class="youtube" target="_blank"></a></li>
+							<li class="module"><a href="https://www.linkedin.com/company/endorphin-baku"><img src="../images/linkedin.png" class="linkedin" target="_blank"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -131,38 +134,67 @@
 				<div class="module portfolio-header">
 					<span>PORTFOLIO</span>
 				</div>
-				<div id="jssor_2" class="port-main-slider module ">
-					<div data-u="slides" class="port-slider-main-slides">
-						<div data-p="225.00" class="sliderContent-mine " style="display: none;">
-							<div class="  main-portfolio-images">
-								<div class="row">
-									<div class=" portimg module" >
-										<a class="fancybox" rel="group" href="../images/port (1).jpg">
-											<img src="../images/port (1).jpg" alt="">
-										</a>
-									</div>
+				<!-- <div id="jssor_2" class="port-main-slider module ">
+						<div data-u="slides" class="port-slider-main-slides">
+								<div data-p="225.00" class="sliderContent-mine " style="display: none;">
+										<div class="  main-portfolio-images">
+												<div class="row">
+														<div class=" portimg module" >
+																<a class="fancybox" rel="group" href="../images/port (1).jpg"></a>
+														</div>
+												</div>
+										</div>
 								</div>
-							</div>
+								<div data-p="225.00" style="display: none;" class="sliderContent-mine">
+										<div class="  main-portfolio-images">
+												<div class="row">
+														<div class=" portimg module" >
+																<a class="fancybox" rel="group" href="../images/port (2).jpg">
+																		<img src="../images/port (2).jpg" alt="" class="image-port">
+																</a>
+														</div>
+												</div>
+										</div>
+								</div>
 						</div>
-						<div data-p="225.00" style="display: none;" class="sliderContent-mine">
-							<div class="  main-portfolio-images">
-								<div class="row">
-									<div class=" portimg module" >
-										<a class="fancybox" rel="group" href="../images/port (2).jpg">
-											<img src="../images/port (2).jpg" alt="" class="image-port">
-										</a>
-									</div>
+						<span data-u="arrowleft" class="jssora22l" data-autocenter="2">
+								<img src="../images/right.png" style="width: 100%;">
+						</span>
+						<span data-u="arrowright" class="jssora22r" data-autocenter="2">
+								<img src="../images/next.png" style="width: 100%;">
+						</span>
+				</div> -->
+				<div class="port-slider-main" >
+					<div id="owl-portfolio" class="owl-carousel module">
+						<div class="item">
+							<a class="fancybox" rel="group" href="../images/port (1).jpg">
+								<img src="../images/port (1).jpg" >
+								<div class="port-absolute">
+									<h3>project</h3>
 								</div>
-							</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="fancybox" rel="group" href="../images/port (1).jpg">
+								<img src="../images/port (1).jpg" >
+								<div class="port-absolute">
+									<h3>project</h3>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="fancybox" rel="group" href="../images/port (1).jpg">
+								<img src="../images/port (1).jpg" >
+								<div class="port-absolute">
+									<h3>project</h3>
+								</div>
+							</a>
 						</div>
 					</div>
-					<span data-u="arrowleft" class="jssora22l" data-autocenter="2">
-						<img src="../images/right.png" style="width: 100%;">
-					</span>
-					<span data-u="arrowright" class="jssora22r" data-autocenter="2">
-						<img src="../images/next.png" style="width: 100%;">
-					</span>
+					<div class="prev module"><img src="../images/prev-port.png" alt=""></div>
+					<div class="next module"><img src="../images/next-port.png" alt=""></div>
 				</div>
+				
 				<div id="jssor_5" class="port-mobil-slider-mine" >
 					<div data-u="loading" class="port-mobil-slider-loading">
 						<div class="loading-1"></div>
@@ -226,82 +258,81 @@
 						<span>STAFF</span>
 					</div>
 					<div class="clearfix"></div>
-					<div class="staff-content">	
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/test.jpg">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+					<div class="staff-content">
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/test.jpg">
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/port (1).jpg">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/staff image 1.png">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/port (1).jpg">
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/staff image 1.png">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/staff image 1.png">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/staff image 1.png">
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/staff image 1.png">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/staff image 1.png">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/staff image 1.png">
 							</div>
-							<div class="staffcon">
-								<div class="img module">
-									<img src="../images/staff image 1.png">
-								</div>
-								<div class="stafftext module">
-									<span>John White</span><br>
-									<span>Co Founder</span>
-								</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
 							</div>
-
-							
-					</div>				
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/staff image 1.png">
+							</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
+							</div>
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/staff image 1.png">
+							</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
+							</div>
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/staff image 1.png">
+							</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
+							</div>
+						</div>
+						<div class="staffcon">
+							<div class="img module">
+								<img src="../images/staff image 1.png">
+							</div>
+							<div class="stafftext module">
+								<span>John White</span><br>
+								<span>Co Founder</span>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 				<div class="staff-slider-padding">
 					<div id="jssor_3" class="staff-slider-mine"  >
@@ -417,7 +448,7 @@
 						<div class="clearfix">
 						</div>
 						<!-- <div style="width: 100%;">
-									<button type="button" class="clients-button btn center-block">See More</button>
+														<button type="button" class="clients-button btn center-block">See More</button>
 						</div> -->
 					</div>
 					<div>
@@ -487,28 +518,31 @@
 							CONTACT
 						</span>
 					</div>
-					<div >
-						<div class="col-md-4  module">
-							<div class="contactcontent">
-								<a href="mailto:info@endorphin.az" title=""><img src="../images/email.png" class="email"></a>
-								<a href="mailto:info@endorphin.az" title=""><span>info@endorphin.az</span></a>
+					<div class="col-md-5">
+						<div class="contact-left">
+							<div class="module">
+								<div class="contactcontent">
+									<a href="mailto:info@endorphin.az" title=""><img src="../images/email.png" class="email"></a>
+									<a href="mailto:info@endorphin.az" title=""><p>info@endorphin.az</p></a>
+								</div>
+							</div>
+							<div class="module">
+								<div class="contactcontent-a">
+									<a href="https://www.google.com/maps/place/Endorphin/@40.385134,49.8258933,17z/data=!4m5!3m4!1s0x0:0xb1b4ae08a0541630!8m2!3d40.385134!4d49.828082?hl=ru-RU" title=""><img src="../images/location.png" class="location"></a>
+									<a class="map-link" href="https://www.google.com/maps/place/Endorphin/@40.385134,49.8258933,17z/data=!4m5!3m4!1s0x0:0xb1b4ae08a0541630!8m2!3d40.385134!4d49.828082?hl=ru-RU" title=""><p >Globus Center floor 11 <br>Ofis N 11.05</p></a>
+								</div>
+							</div>
+							<div class="module">
+								<div class="contactcontent">
+									<a href="call:+994 12 408 79 31" title=""><img src="../images/telephone.png" class="telephone"></a>
+									<a href="call:+994 12 408 79 31" title=""><p class="phone">(012) 408 79 31</p></a>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-4  module">
-							<div class="contactcontent">
-								<a href="https://www.google.com/maps/place/Endorphin/@40.385134,49.8258933,17z/data=!4m5!3m4!1s0x0:0xb1b4ae08a0541630!8m2!3d40.385134!4d49.828082?hl=ru-RU" title=""><img src="../images/location.png" class="location"></a>
-								<a href="https://www.google.com/maps/place/Endorphin/@40.385134,49.8258933,17z/data=!4m5!3m4!1s0x0:0xb1b4ae08a0541630!8m2!3d40.385134!4d49.828082?hl=ru-RU" title=""><span >Globus Center floor 11<br> Ofis N 11.05</span></a>
-							</div>
-						</div>
-						<div class="col-md-4  module">
-							<div class="contactcontent">
-								<a href="#" title=""><img src="../images/telephone.png" class="telephone"></a>
-								<span class="phone">(012) 408 79 31</span>
-							</div>
-						</div>
+						
 					</div>
 					
-					<div class="col-md-12">
+					<div class="col-md-7">
 						<div class="main-form">
 							<form action="" method="get" accept-charset="utf-8">
 								<input type="email" name="email" placeholder="Email" class="input module">
@@ -528,6 +562,7 @@
 	<script src="../Js/jssor.slider-21.1.6.debug.js"></script>
 	<script src ="../Js/bootstrap.js"></script>
 	<script src="../fancy/jquery.fancybox.js"></script>
+	<script src="../js/owl.carousel.js"></script>
 	<script src="../Js/main.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {

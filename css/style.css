@@ -140,15 +140,16 @@ body {
 	margin-top: 4%;
 }
 .mainheader div:last-child ul{
-	width: 260px;
+	width: 360px;
 	margin: 0 auto;
 }
 .mainheader div:last-child ul li a img{
 	width: 70%;
+	height: 70%;
 }
 
 .mainheader div:last-child ul li{
-
+	width: 60px;
 	display: inline-block;
 	/* margin-right:0px ; */
 }
@@ -246,25 +247,105 @@ body {
 #portfolio{
 	height: auto;
 	overflow: hidden;
-	padding-bottom: 70px;
+	
 }
 .mainportfolio{
-	margin-top: 8%; 	
+	margin-top: 6%; 	
 	position: relative
 }
 .portfolio-header{
 	text-align: center;
-	font-size: 80px;
+	font-size: 70px;
 	font-family: "Endorphin BN";
 	color: #9f9fa0;
 	
 }
-.sliderContent-mine{
+.port-slider-main{
+	display: block;
+	position: relative;
+}
+#owl-portfolio{
+	margin: 0 auto;
+	padding-top: 25px;
+	position: relative;
+	width: 742px;
+	height: 400px;
+}
+#owl-portfolio .item{
+	position: relative; 	
+	width: 742px;
+	height: 400px;
+	overflow: hidden;
+}
+#owl-portfolio .item a img{
+	position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: -webkit-grab; 
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+  .prev{
+  	cursor: pointer;
+  	top: 48.5%;
+  	left: 5%;
+  	position: absolute;
+  	width: 60px;
+  	height:60px;
+  }
+  .prev img , .next img{
+  		width: 100%;
+  		height: 100%;
+
+  }
+  .next{
+  	cursor: pointer;
+  	right:5%;
+  	top: 48.5%;
+  	position: absolute;
+  	width: 60px;
+  	height: 60px;
+  }
+  .next:hover , .prev:hover{
+  	transition: 0.5s;
+  	background: black;
+  	opacity: 0.5;
+  }
+
+  .port-absolute{
+	cursor: -webkit-grab; 
+	text-align: center;
+	/* z-index: 999; */
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.port-absolute:hover{
+	background-color: #fedb37;
+	opacity: 0.9;
+	transition: 0.5s ;
+}
+.port-absolute h3{
+	margin: 180px auto;
+	color: #9f9fa0; 
+	/* position: absolute; */
+	/* left:42%; */
+	/* margin-top:50px;  */
+	font-family: "Endorphin BN";
+	font-size: 35px;
+}
+/* .sliderContent-mine{
 	padding-top: 50px ;
 }
 .main-portfolio-images{
-	/* padding-top:60px; */
-	width: 100%;
+	/* padding-top:60px;
+/* 	width: 100%;
 	height: auto;
 	padding-right: 18%;
     padding-left: 18%;
@@ -294,7 +375,7 @@ body {
 .port-absolute{
 	cursor: -webkit-grab;
 	/* text-align: center; */
-	z-index: 999;
+/* 	z-index: 999;
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -363,7 +444,7 @@ body {
  }
  .jssora22r:hover{
  	opacity: 1;
- }   
+ } */
 /* mobil slider portfolio */
 .port-mobil-slider-mine{
 		display:none; 	
@@ -419,20 +500,21 @@ body {
 	width: 100%;
 	height: 100%}
 #staff{
-	height: auto;
+	height:auto;
 	background-color:#fedb37;
 	overflow: hidden;
 }
 .mainstaff{
-	margin-top: 10%;
+	margin-top: 7.5%;
 }
+
 .staff-header{
 	position: relative;
 	text-align: center;
 	font-family: "Endorphin BN";
 	font-size: 80px;
 	color: #9f8d3c;
-	padding-bottom: 60px;
+	padding-bottom: 35px;
 }
 .staff-content{
 	
@@ -440,8 +522,8 @@ body {
 .staffcon{
 	/* margin: 0;
 	padding: 0; */
-	width: 24%;
-	padding-bottom: 70px;
+	width: 16%;
+	/* padding-bottom: 15px; */
 	display: inline-block;
 }
 /* .staffcon div{
@@ -452,8 +534,8 @@ body {
  .img{
  	margin: 0 auto;
  	text-align: center;
- 	width: 134px;
-	height: 134px;
+ 	width: 110px;
+	height: 110px;
  }
  .img img{
 	border: 1px solid transparent;
@@ -473,12 +555,12 @@ body {
 .stafftext span:first-child{
 	color: #4e4c40;
 	font-family: "Endorphin BN";
-	font-size: 22px;
+	font-size: 19px;
 }
 .staffcon div:last-child span:last-child{
 	color: #fffdf3;
 	font-family: "Endorphin N";
-	font-size: 18px;
+	font-size: 15px;
 }
 /* mobil versiya */
 .staff-slider-padding{
@@ -548,7 +630,7 @@ body {
 			display: block;
 		}
 #clients{
-	height: auto;
+	/* min-height: auto; */
 	overflow: hidden;
 }
 .mainclients{
@@ -560,6 +642,12 @@ body {
 	font-size: 80px;
 	text-align: center;
 	font-family: "Endorphin BN";
+}
+.clients-list{
+	margin: 0 auto;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 .clients-list ul{
 	list-style-type: none;
@@ -659,7 +747,7 @@ body {
 }
 .maincontact{
 	margin-top: 8%;
-	padding-bottom: 60px;
+	padding-bottom: 75px;
 }
 .contactheader{
 	text-align: center;
@@ -667,26 +755,55 @@ body {
 	font-family: "Endorphin BN";
 	font-size:80px;
 } 
-
-.contactcontent{
-	padding-top: 60px;
-	width: 100%;
-	text-align: center;
+.contact-left{
+	padding-top: 38px;
+	width: 74%;
+	margin: 0 auto;
 }
-.contactcontent a{
+.contactcontent{
+	padding-top: 30px;
+	width: 100%;
+	/* text-align: center; */
+}
+.contactcontent-a{
+	padding-top: 40px;
+	width: 100%;
+	/* text-align: center; */
+}
+.contactcontent-a a{
 	text-decoration: none;
 }
-.contactcontent span{
-	text-align: center;
+.contactcontent-a p{
+	vertical-align:top;
+	display: inline-block;
+	width: 220px;
+	/* text-align: center; */
 	font-size:18px;
 	font-family: "Endorphin BN";
 	color: #404041;
 	padding-left: 8px;
 }
+.contactcontent a{
+	text-decoration: none;
+}
+.contactcontent p{
+	vertical-align:top;
+	display: inline-block;
+	width: 220px;
+	/* text-align: center; */
+	font-size:18px;
+	font-family: "Endorphin BN";
+	color: #404041;
+	padding-left: 8px;
+}
+.map-link p{
+	vertical-align:top;
+	text-align: center;
+}
 .input{
-	margin-top: 15px;
+	margin-top: 20px;
 	border-radius: 40px;
-	width: 319px;
+	width: 100%;
 	border: none;
 	text-align: center;
 	font-family: "Endorphin N";
@@ -697,14 +814,16 @@ body {
 	font-family: "Endorphin N";
 	font-size: 16px;
 	border-radius: 22px;
- 	width: 319px;
+ 	width: 100%;
     height: 173px;
     resize: none;
-    margin-top: 15px;
+    margin-top: 20px;
     border: none;
     text-align: center;
 }
 .button{
+	width: 85px;
+	color:#404041; 
 	font-size: 18px;
 	text-align: center;
 	border-radius: 12px;
@@ -712,17 +831,17 @@ body {
     border: none;
     font-family: "Endorphin BN";
   	 padding: 1px 8px;
-  	 margin-left:38%;
-  	 margin-top: 15px;
+  	 margin-left:40%;
+  	 margin-top: 20px;
 }
 .main-form{
-	padding-top: 55px;
+	padding-top: 48px;
 
 }
 form{
 	margin: 0 auto;
 	
-	width: 330px;
+	width: 67.432950191570%;
 }
 .input:focus{
 	 outline:none;
@@ -759,8 +878,20 @@ to { transform: translateY(0); }
 .navbar-toggle:focus{
 	background: none !important;
 }
+@media only screen and (min-width: 800px){
+	#clients ,#header, #staff ,#portfolio{
+		min-height: 100vh;
+	}
+
+}
 @media only screen and (max-width: 800px) {
-	 .staffcon, .clients-list,.port-main-slider{
+	form{
+		width: 93%;
+	}
+	.button{
+		margin-left: 37%;
+	}
+	 .staffcon, .clients-list,.port-slider-main{
 		display: none;
 	}
 	 .staff-slider-padding, .clients-slider-mine, .port-mobil-slider-mine{
@@ -886,3 +1017,6 @@ to { transform: translateY(0); }
     left: 364%;
 	}
 }
+
+
+ 

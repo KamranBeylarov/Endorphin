@@ -61,15 +61,7 @@ jQuery(document).ready(function($) {
 		});
 
 
-// portfolio scale
 
-
-var image=$(".portimg img");
-  $('.portimg').hover(function() {
-      $(this).children('a').children('img').css('transform','scale(1.1)');
-    }, function() {
-      $(this).children('a').children('img').css('transform','scale(1)');
-    });
    
    // responsive code
   
@@ -136,7 +128,33 @@ var image=$(".portimg img");
 			});
 
 
+   // owl-portfolio
+     $("#owl-portfolio").owlCarousel({
+        
+        navigation : true,
+        slideSpeed : 600,
+        paginationSpeed : 600,
+        singleItem : true,
+        navigationText :false
 
+    });
+
+     var owl = $(".owl-carousel").data('owlCarousel');
+     $(".next").click(function() {
+       owl.next();
+     });
+     $(".prev").click(function() {
+       owl.prev();
+     });
+
+     // portfolio scale
+
+
+  $('.item').hover(function() {
+      $(this).children('a').children('img').css('transform','scale(1.1)');
+    }, function() {
+      $(this).children('a').children('img').css('transform','scale(1)');
+    });
 			// social icons
 
 
@@ -191,6 +209,13 @@ var image=$(".portimg img");
 			function telephoneOut(){
 				$('.telephone').attr('src', '../images/telephone.png');
 			};
+      $(".linkedin").hover(linkedinOver, linkedinOut);
+      function linkedinOver(){
+        $('.linkedin').attr('src','../images/linkedin color.png');
+      };
+      function linkedinOut(){
+        $('.linkedin').attr('src','../images/linkedin.png');
+      };
 
 			// clients slider 
 			 var jssor_1_options = {
@@ -222,49 +247,49 @@ var image=$(".portimg img");
             $(window).bind("orientationchange", ScaleSlider);	
 });	
 
-jQuery(document).ready(function($) {
-	// portfolio desktop slider
-	 var jssor_2_SlideoTransitions = [
-              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
-              [{b:1900,d:2000,x:-379,e:{x:7}}],
-              [{b:1900,d:2000,x:-379,e:{x:7}}],
-              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
-            ];
+// jQuery(document).ready(function($) {
+// 	// portfolio desktop slider
+// 	 var jssor_2_SlideoTransitions = [
+//               [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+//               [{b:1900,d:2000,x:-379,e:{x:7}}],
+//               [{b:1900,d:2000,x:-379,e:{x:7}}],
+//               [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+//             ];
             
-            var jssor_2_options = {
-              $AutoPlay: false,
-              $SlideDuration:1500,
-              $SlideEasing: $Jease$.$OutQuint,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_2_SlideoTransitions
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
+//             var jssor_2_options = {
+//               $AutoPlay: false,
+//               $SlideDuration:1500,
+//               $SlideEasing: $Jease$.$OutQuint,
+//               $CaptionSliderOptions: {
+//                 $Class: $JssorCaptionSlideo$,
+//                 $Transitions: jssor_2_SlideoTransitions
+//               },
+//               $ArrowNavigatorOptions: {
+//                 $Class: $JssorArrowNavigator$
+//               },
+//               $BulletNavigatorOptions: {
+//                 $Class: $JssorBulletNavigator$
+//               }
+//             };
             
-            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+//             var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
             
-            function ScaleSlider() {
-                var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 1920);
-                    jssor_2_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
+//             function ScaleSlider() {
+//                 var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
+//                 if (refSize) {
+//                     refSize = Math.min(refSize, 1920);
+//                     jssor_2_slider.$ScaleWidth(refSize);
+//                 }
+//                 else {
+//                     window.setTimeout(ScaleSlider, 30);
+//                 }
+//             }
+//             ScaleSlider();
+//             $(window).bind("load", ScaleSlider);
+//             $(window).bind("resize", ScaleSlider);
+//             $(window).bind("orientationchange", ScaleSlider);
             
-});
+// });
 jQuery(document).ready(function($) {
 		// staff slider 
 			 var jssor_3_options = {
